@@ -1,12 +1,18 @@
 <template>
-  <div class="home">
-    <h1>Vuechat</h1>
+  <div>
+    <Login/>
+    <Register/>
   </div>
 </template>
 
 <script>
-
+import Login from '../components/auth/Login.vue'
+import Register from '../components/auth/Register.vue'
 export default {
   name: 'HomeView',
+  components:{
+    Login,
+    Register
+  }
 }
 </script>
